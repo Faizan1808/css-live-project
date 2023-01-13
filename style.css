@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav Bar*/
+.nav{
+    display: flex;
+    gap : 42rem;
+    border-radius: 5px;
+    background-color: rgb(174, 228, 249);
+}
+
+.navBar{
+    display: flex;
+    
+}
+
+.navBar li{
+    border: 3px solid black;
+    margin: 10px;
+    padding: 10px;
+    height: 1rem;
+    width: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+#img{
+    width: 17rem;
+}
+
+/* Middle section */
+
+.middle-section{
+    display: flex;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background-image: linear-gradient(pink, skyblue,yellow);
+
+}
+
+#section h1 {
+    font-size: 3rem;
+}
+
+#section button{
+    height: 47px;
+    width: 116px; 
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: rgb(4, 142, 211);
+    cursor: pointer;
+}
+
+
+/* Cards */
+
+#parent-card{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 24px;
+}
+
+.child{
+    border:  2px solid black;
+    height: 250px;
+    width: 185px;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgb(76, 76, 76);
+}
+
+.btn{
+    color: aliceblue;
+    background-color: black;
+    width: 115px;
+    height: 42px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 33px;
+    margin-left: 35px;
+}
+
+#btn1{
+    position: absolute;
+    bottom: 33px;
+}
+#btn2{
+    position: absolute;
+    bottom: 33px;
+}
+
+#btn3{
+    position: absolute;
+    bottom: 33px;
+}
+
+.child p{
+    position: absolute;
+    bottom: 99px;
+    margin-left: 34px;
+}
+
+.last-section{
+    height: 69px;
+    width: 160px;
+    margin: 20px 10px;
+}
+
+/* copyright */
+.copyright div{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: grey;
+    font-size: 2.5rem;
+}
+
+/* Media query */
+
+@media (max-width:720px) {
+    .navBar{
+        display: none;
+    }
+    #parent-card{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #btn1{
+        bottom: 936px;
+    }
+
+    #btn2{
+        bottom: 640px;
+    }
+    #btn3{
+        bottom: 324px;
+    }
+
+    #parent-card{
+        margin: 99px;
+        gap: 50px;
+    }
+    
+    #p1{
+        position: absolute;
+        bottom: 998px;;
+    }
+    #p2{
+        position: absolute;
+        bottom: 704px;
+    }
+    #p3{
+        position: absolute;
+        bottom: 390px;
+    }
+
+    .middle-section img{
+        height: 134px;
+        width: 312px;
+        position: relative;
+        left: -272px;
+        bottom: -61px;
+    }
+
+    #section h1{
+        margin-bottom: 127px;   
+    }
+    
+}
